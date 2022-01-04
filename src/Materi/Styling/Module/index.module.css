@@ -1,0 +1,20 @@
+.btn{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.info{
+    border-color: lightblue;
+    color: dodgerblue;
+    border-radius: 5px;
+    
+
+}
+
+.info:hover{
+    background-color: lightblue;
+    color: white;
+}
