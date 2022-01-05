@@ -1,4 +1,6 @@
-import Styling from "./Materi/Styling";
+
+import FormTugas from "./Materi/FormTugas";
+
 
 
 
@@ -6,7 +8,8 @@ import Styling from "./Materi/Styling";
 function App() {
   return (
     <div className="App">
-    <Styling/>
+    {/* <Styling/> */}
+    <FormTugas/>
     </div>
   );
 }
