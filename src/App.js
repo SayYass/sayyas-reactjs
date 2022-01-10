@@ -1,5 +1,6 @@
 
 import FormTugas from "./Materi/FormTugas";
+import News from "./News/Index";
 
 
 
@@ -7,10 +8,7 @@ import FormTugas from "./Materi/FormTugas";
 
 function App() {
   return (
-    <div className="App">
-    {/* <Styling/> */}
-    <FormTugas/>
-    </div>
+    <News/>
   );
 }
 
