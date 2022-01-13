@@ -11,7 +11,7 @@ import News from "./News/Index";
 
 function App() {
   return (
-    <Hooks/>
+    <NewsHooks/>
      )
 }
 
