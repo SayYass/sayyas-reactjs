@@ -10,7 +10,7 @@ import Searchs from "./Searchs";
 export default class News extends React.Component{
     state = {
         news: [],
-        value : []
+        value : ''
        
       }
 
@@ -62,9 +62,17 @@ export default class News extends React.Component{
        
     }
 
-    componentDidUpdate(){
-      
-       this.handleFilter();
+    componentDidUpdate(prevProps, prevState){
+        
+      if ( this.state.value !== prevState){
+        if ( this.state.value){
+          this.handleFilter();
+        }
+      } 
+
+      if (this.state.value === ''){
+        this.handleTrending();
+      }
         
     }
    

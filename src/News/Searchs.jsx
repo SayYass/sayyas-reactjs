@@ -9,22 +9,9 @@ export default class Searchs extends React.Component{
   state = { key : '' }
     handleSubmit = event => {
       event.preventDefault();
-      let src = JSON.stringify(this.state.key);  
+      this.props.receiValue(this.state.key);  
    
-  axios.get('https://newsapi.org/v2/everything?' +
-  'q=' + src +
-  '&apiKey=4994cc78db5f49bfbac2484a02e76cfe')
-      .then(res => {
-        const news = res.data.articles;
-
-        this.setState({ news });
-        // console.log(this.state)
-        this.props.receiValue(src)
-      }).catch(e => {
-        console.log(e)
-      }).then(()=>{
-        <Spinner animation="border" />
-      })
+  
   } 
 render(){
     return( 

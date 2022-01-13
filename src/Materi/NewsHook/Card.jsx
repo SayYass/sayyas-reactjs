@@ -1,10 +1,11 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Card, Spinner } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 
 
- const Cardss = (props) => {
+
+ const Cards = (props) => {
   
  
     return (
@@ -27,4 +28,4 @@ import { Button, Card, Spinner } from "react-bootstrap";
     
   }
 
- export default Cardss;
+ export default Cards;
