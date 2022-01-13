@@ -7,8 +7,8 @@ const Effect = () => {
     let [seconds, setSeconds] = useState(0);
     useEffect(() => {
         console.log('getApi');
-        axios.get('https://jsonplaceholder.typicode.com/users/1')
-        .then(res => setUser(res.data))
+        axios.get('https://newsapi.org/v2/top-headlines?country=id&apiKey=4994cc78db5f49bfbac2484a02e76cfe')
+        .then(res => setUser(res.data.articles))
     }, [])
 
     useEffect(()=> {
@@ -27,7 +27,11 @@ const Effect = () => {
     return (
         <div>
             
-           <p>{user.name}</p>
+            <ul>
+                {
+                    user.map(u => <li>{u.title}</li> )
+                }
+            </ul>
            <div>Waktu Yang berjalan : {Math.floor(seconds / 60) } Menit {seconds % 60} Detik </div>
         </div>
     )
