@@ -1,7 +1,6 @@
 
-import Hooks from "./Materi/Hooks";
-import NewsHooks from "./Materi/NewsHook";
-import News from "./News/Index";
+import Routing from "./Materi/Router";
+
 
 
 
@@ -11,7 +10,7 @@ import News from "./News/Index";
 
 function App() {
   return (
-    <NewsHooks/>
+    <Routing/>
      )
 }
 
