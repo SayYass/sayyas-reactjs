@@ -52,41 +52,6 @@ export default class Validation extends React.Component{
             ]
           })
 
-        // let message = [];
-        // if (email.length === 0){
-        //     message= [...message, 'Email Tidak Boleh Kosong']
-        // }
-        // if (password.length === 0){
-        //     message= [...message, 'Password Tidak Boleh Kosong']
-        // }
-
-        // const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        // if(!re.test(String(email).toLowerCase())) {
-        //     message = [...message , 'Email Tidak Valid']
-        // }
-        // if(password.length < 8){
-        //     message = [...message , 'Password Harus lebih dari 8 karakter']
-        // }
-        // if (message.length > 0 ){
-        //     this.setState({
-        //         errors : message
-        //     } ,() => console.log(this.state.errors))
-        // } else {
-        //     alert (
-        //         `
-        //         Email       : ${this.state.email}
-        //         Password    : ${this.state.password}
-
-                
-                
-                
-        //         `
-        //     )
-
-        //     this.setState({
-        //         errors : []
-        //     })
-        // }
     }
     render(){
         const style = {

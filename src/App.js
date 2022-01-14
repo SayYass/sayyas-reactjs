@@ -1,5 +1,6 @@
 
-import Routing from "./Materi/Router";
+import Apps from "./Materi";
+
 
 
 
@@ -10,7 +11,7 @@ import Routing from "./Materi/Router";
 
 function App() {
   return (
-    <Routing/>
+    <Apps/>
      )
 }
 
