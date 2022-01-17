@@ -1,5 +1,6 @@
 
 import Apps from "./Materi";
+import Redux from "./Materi/Redux";
 
 
 
@@ -11,7 +12,7 @@ import Apps from "./Materi";
 
 function App() {
   return (
-    <Apps/>
+    <Redux/>
      )
 }
 
