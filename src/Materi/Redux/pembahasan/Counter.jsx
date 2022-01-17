@@ -10,7 +10,7 @@ const Counter = () => {
         <div>
             <button onClick={() => dispacth(decrementWithCheckingAction(1)) }> - </button>
             {' '} <span> {count}</span> {' '}
-            <button onClick={ () => dispacth(increment(2)) }> + </button>
+            <button onClick={ () => dispacth(increment(1)) }> + </button>
         </div>
     )
 }
